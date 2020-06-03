@@ -1,0 +1,108 @@
+<!DOCTYPE TEXTinnerText>
+<TEXTinnerText>
+
+    <head>
+        <title>메뉴만들기</title>
+        <style>
+            #menu {
+                height: 40px;
+                width: 800px;
+            }
+
+            #menu ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #menu ul li {
+                float: left;
+                list-style: none;
+                color: white;
+                background-color: #c0c0c0;
+                line-height: 30px;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            #menu ul ul {
+                display: none;
+            }
+
+            #menu ul li:hover ul {
+                display: block;
+                background: #4b545f;
+                color: white;
+            }
+
+            #menu .first {
+                text-decoration: none;
+                color: white;
+                display: inline-block;
+                width: 150px;
+            }
+
+            #menu .first:hover {
+                background: #4b545f;
+                color: white;
+                display: block;
+                width: 150px;
+            }
+
+            div {
+                padding-left: 100px;
+                float: left;
+            }
+        </style>
+    </head>
+    <script type="text/javascript">
+        function one() {
+            location.href = "../hw3.html";
+            document.getElementById("name").innerText = "이름:오선식";
+            document.getElementById("num").innerText = "학번:123123";
+        }
+
+        function two() {
+            location.href = "./1.html";
+            document.getElementById("name").innerText = "이름:임효진";
+            document.getElementById("num").innerText = "학번:234234";
+        }
+
+        function three() {
+            location.href = "./2.html";
+            document.getElementById("name").innerText = "이름:김동건";
+            document.getElementById("num").innerText = "학번:345345";
+        }
+
+        function four() {
+            location.href = "./3.html";
+            document.getElementById("name").innerText = "이름:한주연";
+            document.getElementById("num").innerText = "학번:456456";
+        }
+
+        function five() {
+            location.href = "./4.html";
+            document.getElementById("name").innerText = "이름:안승현";
+            document.getElementById("num").innerText = "학번:567567";
+        }
+    </script>
+
+    <body>
+        <nav id="menu">
+            <ul>
+               <li><a class="first"  onclick="one();">프론트팀</a></li>
+                <li><a class="first"  onclick="two();">임효진</a></li>
+                <li><a class="first"  onclick="three();">김동건</a></li>
+                <li><a class="first"  onclick="four();">한주연</a></li>
+                <li><a class="first"  onclick="five();">안승현</a></li>
+            </ul>
+        </nav>
+        <div><img src="./2.jpg" height="150px" width="150px" alt="me"></div>
+        <div id="name">이름: 임효진</div><br>
+        <div>학교: 가톨릭대학교</div><br>
+        <div id="num">학번: 234234</div><br>
+        <div>전공: 컴퓨터정보공학부</div><br>
+
+    </body>
+
+</TEXTinnerText>
