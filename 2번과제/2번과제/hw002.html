@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>메뉴만들기</title>
+    <style>
+        #menu {
+            height: 40px;
+            width: 800px;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #menu ul li {
+            float: left;
+            list-style: none;
+            color: white;
+            background-color: #c0c0c0;
+            line-height: 30px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        #menu ul ul {
+            display: none;
+        }
+
+        #menu ul li:hover ul {
+            display: block;
+            background: #4b545f;
+            color: white;
+        }
+
+        #menu .first {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 150px;
+        }
+
+        #menu .second {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 150px;
+        }
+
+        #menu .third {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 150px;
+        }
+
+        #menu .first:hover {
+            background: #4b545f;
+            color: white;
+            display: block;
+            width: 150px;
+        }
+
+        #menu .second:hover {
+            background-color: #4b545f;
+            color: white;
+            display: block;
+            width: 150px;
+        }
+
+        #menu .third:hover {
+            background-color: #4b545f;
+            color: white;
+            display: block;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a class="first" href="#">프론트 팀</a></li>
+            <li><a class="first" href="#">임효진</a>
+                <ul>
+                    <li a class="second">팀장</a></li><br>
+                    <li a class="third">컴퓨터정보공학부</a></li>
+                </ul>
+            </li>
+            <li><a class="first" href="#">김동건</a>
+                <ul>
+                    <li a class="second">팀원</li><br>
+                    <li a class="second">학부장</li>
+                </ul>
+            </li>
+            <li><a class="first" href="#">한주연</a>
+                <ul>
+                    <li a class="second">팀원</li><br>
+                    <li a class="second">팬 일원</li>
+                </ul>
+            </li>
+            <li><a class="first" href="#">안승현</a>
+                <ul>
+                    <li a class="second">팀원</li><br>
+                    <li a class="second">새내기</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
